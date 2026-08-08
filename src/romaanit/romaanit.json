@@ -1,0 +1,5 @@
+{
+  "layout": "base.njk",
+  "tags": "romaanit",
+  "is_story": true
+}

@@ -1,0 +1,5 @@
+{
+  "layout": "base.njk",
+  "tags": "novellit",
+  "is_story": true
+}

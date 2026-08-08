@@ -1,0 +1,16 @@
+---
+layout: base.njk
+title: Romaanit | Kirjallisuussivusto
+---
+<section id="romaanit">
+  <h1 style="font-size: 2.5rem; margin-bottom: 2rem;">Romaanit</h1>
+  
+  {%- for post in collections.romaanit -%}
+    <a href="{{ post.url }}" class="story-link">
+      <h3 class="story-title">{{ post.data.title }}</h3>
+      <div class="story-meta">{{ post.date | date }} &bull; Romaani</div>
+    </a>
+  {%- else -%}
+    <p>Ei romaaneja vielä julkaistu.</p>
+  {%- endfor -%}
+</section>
